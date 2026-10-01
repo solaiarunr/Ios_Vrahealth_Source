@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="DoctorDetailsTableViewCell" customModule="Meetdoc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2d-gC-rYL">
+                        <rect key="frame" x="10" y="10" width="300" height="77"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TgW-Cd-u6S">
+                                <rect key="frame" x="10" y="10" width="280" height="57"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="hNc-oi-tJG"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="gfX-FF-Pyv">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" name="appbg"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="TgW-Cd-u6S" secondAttribute="bottom" constant="10" id="Js5-J2-2Ix"/>
+                            <constraint firstItem="TgW-Cd-u6S" firstAttribute="top" secondItem="r2d-gC-rYL" secondAttribute="top" constant="10" id="h3Y-7u-6Gm"/>
+                            <constraint firstItem="TgW-Cd-u6S" firstAttribute="leading" secondItem="r2d-gC-rYL" secondAttribute="leading" constant="10" id="sWA-Ma-njn"/>
+                            <constraint firstAttribute="trailing" secondItem="TgW-Cd-u6S" secondAttribute="trailing" constant="10" id="zYt-3z-Ot0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="r2d-gC-rYL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3el-LH-FM0"/>
+                    <constraint firstAttribute="bottom" secondItem="r2d-gC-rYL" secondAttribute="bottom" constant="10" id="PGh-Bg-TJE"/>
+                    <constraint firstAttribute="trailing" secondItem="r2d-gC-rYL" secondAttribute="trailing" constant="10" id="blQ-yc-E8e"/>
+                    <constraint firstItem="r2d-gC-rYL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="yAX-UP-SFi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="appbg"/>
+            <connections>
+                <outlet property="collectiionViewHeightConst" destination="hNc-oi-tJG" id="bJZ-Ax-0eF"/>
+                <outlet property="collectionView" destination="TgW-Cd-u6S" id="5ol-Wq-3Qj"/>
+                <outlet property="shadowView" destination="r2d-gC-rYL" id="AiI-r4-izh"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="114.84375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="appbg">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

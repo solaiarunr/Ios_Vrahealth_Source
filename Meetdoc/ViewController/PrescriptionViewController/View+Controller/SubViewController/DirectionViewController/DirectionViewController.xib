@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DirectionViewController" customModule="Meetdoc" customModuleProvider="target">
+            <connections>
+                <outlet property="applyButton" destination="mp9-aO-5Nn" id="4sj-he-p5E"/>
+                <outlet property="tableView" destination="xN3-90-j6Q" id="QfI-pg-adq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sB9-B7-0CZ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="803"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xN3-90-j6Q">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="743"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="9cf-cd-hkQ"/>
+                                <outlet property="delegate" destination="-1" id="VYf-bk-Goj"/>
+                            </connections>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mp9-aO-5Nn">
+                            <rect key="frame" x="10" y="758" width="394" height="45"/>
+                            <color key="backgroundColor" name="AppColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="0hf-P8-Egh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
+                            <state key="normal" title="Apply">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="applyButtonAct:" destination="-1" eventType="touchUpInside" id="CeX-xq-Lam"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="mp9-aO-5Nn" firstAttribute="leading" secondItem="sB9-B7-0CZ" secondAttribute="leading" constant="10" id="3a9-rJ-YGC"/>
+                        <constraint firstItem="xN3-90-j6Q" firstAttribute="leading" secondItem="sB9-B7-0CZ" secondAttribute="leading" id="h2R-UV-rEd"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="appbg"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sB9-B7-0CZ" secondAttribute="bottom" constant="15" id="AGW-BI-Pza"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sB9-B7-0CZ" secondAttribute="trailing" id="BG0-RE-bZK"/>
+                <constraint firstItem="sB9-B7-0CZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="jf2-hS-PxW"/>
+                <constraint firstItem="sB9-B7-0CZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vv5-wz-LCO"/>
+            </constraints>
+            <point key="canvasLocation" x="-103" y="68"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AppColor">
+            <color red="0.97299998998641968" green="0.32199999690055847" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appbg">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZegoCallViewController" customModule="VRA_HEALTH" customModuleProvider="target">
+            <connections>
+                <outlet property="inviteesTextField" destination="HmI-b9-sbW" id="51g-6S-O8y"/>
+                <outlet property="videoCallView" destination="3Vr-Cb-PS1" id="r1j-uE-VEs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="voiceCallView" destination="Nr3-oc-xge" id="Xki-7B-lSC"/>
+                <outlet property="yourUserIDLabel" destination="ZmN-KT-D51" id="RAi-Eb-eIE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HmI-b9-sbW">
+                    <rect key="frame" x="17.5" y="316.5" width="200" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="jb7-CT-3jK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nr3-oc-xge">
+                    <rect key="frame" x="237.5" y="313.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="LHa-RQ-iMF"/>
+                        <constraint firstAttribute="height" constant="40" id="z8F-SG-7FR"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Vr-Cb-PS1">
+                    <rect key="frame" x="287.5" y="313.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="RFv-wD-QCY"/>
+                        <constraint firstAttribute="width" constant="40" id="eRv-G8-Nr6"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmN-KT-D51">
+                    <rect key="frame" x="17" y="263" width="41.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3Vr-Cb-PS1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="120" id="5VR-Yc-r7g"/>
+                <constraint firstItem="HmI-b9-sbW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="8ak-DK-kf9"/>
+                <constraint firstItem="Nr3-oc-xge" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="70" id="NVb-Pf-Vlu"/>
+                <constraint firstItem="HmI-b9-sbW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-70" id="Ros-eP-bIT"/>
+                <constraint firstItem="ZmN-KT-D51" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-150" id="gEF-Bh-U3n"/>
+                <constraint firstItem="3Vr-Cb-PS1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="oFH-fX-Hjz"/>
+                <constraint firstItem="Nr3-oc-xge" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="srQ-Zv-xib"/>
+                <constraint firstItem="ZmN-KT-D51" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-60" id="uvx-Mk-4yG"/>
+            </constraints>
+            <point key="canvasLocation" x="76" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

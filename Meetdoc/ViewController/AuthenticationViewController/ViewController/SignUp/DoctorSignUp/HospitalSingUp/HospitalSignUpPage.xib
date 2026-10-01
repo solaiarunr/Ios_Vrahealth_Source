@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HospitalSignUpPage" customModule="Meetdoc" customModuleProvider="target">
+            <connections>
+                <outlet property="addHospitalBtn" destination="Bea-iP-0P2" id="uwm-zh-vD2"/>
+                <outlet property="applyBtn" destination="XEP-AX-Ox4" id="Oju-MQ-klv"/>
+                <outlet property="hospNotFoundImage" destination="c6F-BI-x4A" id="sno-JV-Kqf"/>
+                <outlet property="noStackView" destination="Wmh-CL-gWb" id="VNz-rO-afo"/>
+                <outlet property="plsAddHospLbl" destination="wbk-SD-sxi" id="mxf-82-5XP"/>
+                <outlet property="searchTextField" destination="qIt-Ty-Uvl" id="FGB-gg-xV5"/>
+                <outlet property="searchView" destination="hmS-hR-U0c" id="UkW-xV-sjF"/>
+                <outlet property="tableView" destination="bDe-ou-Ti3" id="Wvn-hn-bSp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="k6u-yD-mdN">
+                    <rect key="frame" x="0.0" y="10" width="414" height="716"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmS-hR-U0c">
+                            <rect key="frame" x="15" y="0.0" width="384" height="45"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XRa-4w-EIa">
+                                    <rect key="frame" x="8" y="0.0" width="368" height="45"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchicon" translatesAutoresizingMaskIntoConstraints="NO" id="kMg-VO-Hae">
+                                            <rect key="frame" x="0.0" y="12.666666666666668" width="20" height="20.000000000000004"/>
+                                            <color key="tintColor" name="BorderColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="AO6-rR-CPd"/>
+                                                <constraint firstAttribute="width" constant="20" id="UGr-E4-z2g"/>
+                                            </constraints>
+                                        </imageView>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qIt-Ty-Uvl">
+                                            <rect key="frame" x="25" y="0.0" width="343" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="Avo-G4-nc8"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="textFieldEditingChangedAct:" destination="-1" eventType="editingChanged" id="C13-bS-Wzh"/>
+                                                <outlet property="delegate" destination="-1" id="0wM-ro-AyG"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" name="appbg"/>
+                            <constraints>
+                                <constraint firstItem="XRa-4w-EIa" firstAttribute="top" secondItem="hmS-hR-U0c" secondAttribute="top" id="0WA-32-InH"/>
+                                <constraint firstItem="XRa-4w-EIa" firstAttribute="leading" secondItem="hmS-hR-U0c" secondAttribute="leading" constant="8" id="Kur-pH-qyf"/>
+                                <constraint firstAttribute="trailing" secondItem="XRa-4w-EIa" secondAttribute="trailing" constant="8" id="nkH-5G-Wkx"/>
+                                <constraint firstAttribute="bottom" secondItem="XRa-4w-EIa" secondAttribute="bottom" id="xun-n1-bbr"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bDe-ou-Ti3">
+                            <rect key="frame" x="0.0" y="55" width="414" height="606"/>
+                            <color key="backgroundColor" name="appbg"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Yj8-rU-jqF"/>
+                                <outlet property="delegate" destination="-1" id="ppB-LY-Z3o"/>
+                            </connections>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEP-AX-Ox4">
+                            <rect key="frame" x="10" y="671" width="394" height="45"/>
+                            <color key="backgroundColor" name="AppColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="CLK-Eh-ZvQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <state key="normal" title="Apply">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="applyBtnTapped:" destination="-1" eventType="touchUpInside" id="pPF-Eo-3t0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="XEP-AX-Ox4" firstAttribute="leading" secondItem="k6u-yD-mdN" secondAttribute="leading" constant="10" id="1nk-ae-Gbw"/>
+                        <constraint firstItem="bDe-ou-Ti3" firstAttribute="leading" secondItem="k6u-yD-mdN" secondAttribute="leading" id="EJD-zh-GuX"/>
+                        <constraint firstItem="hmS-hR-U0c" firstAttribute="leading" secondItem="k6u-yD-mdN" secondAttribute="leading" constant="15" id="Tm1-1P-IJ2"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Wmh-CL-gWb">
+                    <rect key="frame" x="15" y="246.33333333333337" width="384" height="243.66666666666663"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hosp_Not_Found" translatesAutoresizingMaskIntoConstraints="NO" id="c6F-BI-x4A">
+                            <rect key="frame" x="117" y="0.0" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="TZc-Ea-71T"/>
+                                <constraint firstAttribute="height" constant="150" id="v9v-bV-d5p"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hospital Not Found Please Add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbk-SD-sxi">
+                            <rect key="frame" x="79.333333333333329" y="164.99999999999997" width="225.33333333333337" height="18.666666666666657"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bea-iP-0P2">
+                            <rect key="frame" x="20" y="198.66666666666666" width="344" height="45"/>
+                            <color key="backgroundColor" name="AppColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="81G-5c-8Y4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <state key="normal" title="Add Hospital">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="addHospitalBtnTapped:" destination="-1" eventType="touchUpInside" id="jvQ-37-Jih"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Bea-iP-0P2" firstAttribute="leading" secondItem="Wmh-CL-gWb" secondAttribute="leading" constant="20" id="L27-2j-rgU"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="appbg"/>
+            <constraints>
+                <constraint firstItem="Wmh-CL-gWb" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="1x2-XR-D1v"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k6u-yD-mdN" secondAttribute="trailing" id="52P-Zi-uAo"/>
+                <constraint firstItem="k6u-yD-mdN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5bi-P3-jKi"/>
+                <constraint firstItem="Wmh-CL-gWb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="cCY-Rx-Oxs"/>
+                <constraint firstItem="k6u-yD-mdN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="jT0-xj-uoa"/>
+                <constraint firstItem="Wmh-CL-gWb" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="oTu-0M-34Q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="k6u-yD-mdN" secondAttribute="bottom" constant="10" id="yel-Ls-ALO"/>
+            </constraints>
+            <point key="canvasLocation" x="-23.188405797101453" y="55.434782608695656"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Hosp_Not_Found" width="200.33332824707031" height="177"/>
+        <image name="searchicon" width="25" height="25"/>
+        <namedColor name="AppColor">
+            <color red="0.97299998998641968" green="0.32199999690055847" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BorderColor">
+            <color red="0.77600002288818359" green="0.77600002288818359" blue="0.7839999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appbg">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+    </resources>
+</document>

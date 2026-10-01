@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsPage" customModule="Meetdoc" customModuleProvider="target">
+            <connections>
+                <outlet property="bannerView" destination="Cyg-e3-BBf" id="9cg-Vo-fWq"/>
+                <outlet property="bannerWholeView" destination="vS6-WQ-98p" id="lqS-Jx-ptr"/>
+                <outlet property="settingsTable" destination="6aZ-kL-CCj" id="rCf-wd-xfH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fzY-Yd-RZB">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6aZ-kL-CCj">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="686"/>
+                            <color key="backgroundColor" name="appbg"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="oia-Fj-Qbf"/>
+                                <outlet property="delegate" destination="-1" id="e0T-bQ-Nlc"/>
+                            </connections>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vS6-WQ-98p">
+                            <rect key="frame" x="0.0" y="686" width="414" height="50"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cyg-e3-BBf" customClass="GADBannerView">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <color key="backgroundColor" name="White"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="BX5-L3-AR9"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="White"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Cyg-e3-BBf" secondAttribute="trailing" id="9KA-Ox-ouD"/>
+                                <constraint firstItem="Cyg-e3-BBf" firstAttribute="top" secondItem="vS6-WQ-98p" secondAttribute="top" id="B7f-kM-hRS"/>
+                                <constraint firstItem="Cyg-e3-BBf" firstAttribute="leading" secondItem="vS6-WQ-98p" secondAttribute="leading" id="IZK-nM-22a"/>
+                                <constraint firstAttribute="bottom" secondItem="Cyg-e3-BBf" secondAttribute="bottom" id="dKv-cN-Wcw"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="appbg"/>
+            <constraints>
+                <constraint firstItem="fzY-Yd-RZB" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="D2X-sx-bTo"/>
+                <constraint firstItem="fzY-Yd-RZB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gg1-wo-gCc"/>
+                <constraint firstItem="fzY-Yd-RZB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nIP-zi-kxU"/>
+                <constraint firstItem="fzY-Yd-RZB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="vdx-eS-pIJ"/>
+            </constraints>
+            <point key="canvasLocation" x="-82.400000000000006" y="295.50224887556226"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appbg">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+    </resources>
+</document>

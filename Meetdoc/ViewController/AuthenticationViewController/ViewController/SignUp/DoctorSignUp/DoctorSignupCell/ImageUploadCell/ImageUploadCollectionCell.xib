@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageUploadCollectionCell" id="gTV-IL-0wX" customClass="ImageUploadCollectionCell" customModule="Meetdoc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="109" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="109" height="102"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0w6-Oz-Phg">
+                        <rect key="frame" x="0.0" y="0.0" width="109" height="102"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQ5-M5-CGw">
+                        <rect key="frame" x="2" y="2" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="QeV-m6-oRc"/>
+                            <constraint firstAttribute="width" constant="20" id="wuv-PP-ZeJ"/>
+                        </constraints>
+                        <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                        <state key="normal" image="close_icon"/>
+                        <connections>
+                            <action selector="closeBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="RQx-De-h4o"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4b-jK-Rcz">
+                        <rect key="frame" x="2" y="2" width="105" height="98"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="ClearColor"/>
+            <constraints>
+                <constraint firstItem="0w6-Oz-Phg" firstAttribute="trailing" secondItem="c4b-jK-Rcz" secondAttribute="trailing" constant="2" id="4Sr-ET-DDW"/>
+                <constraint firstItem="c4b-jK-Rcz" firstAttribute="leading" secondItem="0w6-Oz-Phg" secondAttribute="leading" constant="2" id="Bre-Nx-WHq"/>
+                <constraint firstItem="uQ5-M5-CGw" firstAttribute="top" secondItem="0w6-Oz-Phg" secondAttribute="top" constant="2" id="GCn-Xq-Oal"/>
+                <constraint firstItem="0w6-Oz-Phg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="M5M-OR-oFP"/>
+                <constraint firstItem="0w6-Oz-Phg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="V9w-Fg-oTB"/>
+                <constraint firstItem="uQ5-M5-CGw" firstAttribute="leading" secondItem="0w6-Oz-Phg" secondAttribute="leading" constant="2" id="WX5-Il-TFM"/>
+                <constraint firstAttribute="trailing" secondItem="0w6-Oz-Phg" secondAttribute="trailing" id="dcJ-qO-YyW"/>
+                <constraint firstItem="0w6-Oz-Phg" firstAttribute="bottom" secondItem="c4b-jK-Rcz" secondAttribute="bottom" constant="2" id="dol-m7-K0r"/>
+                <constraint firstAttribute="bottom" secondItem="0w6-Oz-Phg" secondAttribute="bottom" id="fMb-MV-gqt"/>
+                <constraint firstItem="c4b-jK-Rcz" firstAttribute="top" secondItem="0w6-Oz-Phg" secondAttribute="top" constant="2" id="j6H-f5-Pnf"/>
+            </constraints>
+            <size key="customSize" width="109" height="102"/>
+            <connections>
+                <outlet property="closeBtn" destination="uQ5-M5-CGw" id="Jsn-Uz-1i3"/>
+                <outlet property="countLabel" destination="c4b-jK-Rcz" id="UKj-rP-YWc"/>
+                <outlet property="imageViewUpload" destination="0w6-Oz-Phg" id="0Q0-ch-vmJ"/>
+            </connections>
+            <point key="canvasLocation" x="-19.565217391304348" y="72.991071428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="close_icon" width="21.333333969116211" height="21.333333969116211"/>
+        <namedColor name="ClearColor">
+            <color red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

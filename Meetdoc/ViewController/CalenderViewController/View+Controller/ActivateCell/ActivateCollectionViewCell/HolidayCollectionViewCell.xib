@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HolidayCollectionViewCell" customModule="Meetdoc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="113" height="76"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="113" height="76"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HX5-Rb-T3c">
+                        <rect key="frame" x="0.0" y="44" width="113" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="HX5-Rb-T3c" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="Lrp-Uf-ERr"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="HX5-Rb-T3c" secondAttribute="top" id="PCd-c1-tEd"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="HX5-Rb-T3c" secondAttribute="bottom" id="isc-cS-jty"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="HX5-Rb-T3c" secondAttribute="trailing" id="q9L-MO-6jW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="113" height="76"/>
+            <connections>
+                <outlet property="holidayLabel" destination="HX5-Rb-T3c" id="0sb-R0-oas"/>
+            </connections>
+            <point key="canvasLocation" x="183.33333333333334" y="126.5625"/>
+        </collectionViewCell>
+    </objects>
+</document>

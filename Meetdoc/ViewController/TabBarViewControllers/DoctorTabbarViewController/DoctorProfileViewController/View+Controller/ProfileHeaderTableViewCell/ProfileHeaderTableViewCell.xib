@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="181" id="KGk-i7-Jjw" customClass="ProfileHeaderTableViewCell" customModule="Meetdoc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="181"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8Q-4w-gAE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="57.5"/>
+                        <color key="backgroundColor" name="AppColor"/>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VKD-1X-lJl">
+                        <rect key="frame" x="20" y="20" width="75" height="131"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cmo-gv-MCU">
+                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="OF1-3c-9jS"/>
+                                    <constraint firstAttribute="height" constant="75" id="j9z-PQ-Tfr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qs-pL-7s3">
+                                <rect key="frame" x="0.0" y="90" width="41.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" name="appbg"/>
+                <constraints>
+                    <constraint firstItem="VKD-1X-lJl" firstAttribute="top" secondItem="M8Q-4w-gAE" secondAttribute="top" constant="20" id="Gbf-Lq-kGk"/>
+                    <constraint firstItem="VKD-1X-lJl" firstAttribute="leading" secondItem="M8Q-4w-gAE" secondAttribute="leading" constant="20" id="Ujm-8i-dZi"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VKD-1X-lJl" secondAttribute="trailing" id="ZPR-gg-gOu"/>
+                    <constraint firstAttribute="trailing" secondItem="M8Q-4w-gAE" secondAttribute="trailing" id="aDY-9L-0PP"/>
+                    <constraint firstAttribute="bottom" secondItem="VKD-1X-lJl" secondAttribute="bottom" constant="30" id="b6s-lF-bPQ"/>
+                    <constraint firstItem="M8Q-4w-gAE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cTT-0O-CH6"/>
+                    <constraint firstItem="M8Q-4w-gAE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hIe-Fo-VW4"/>
+                    <constraint firstItem="Cmo-gv-MCU" firstAttribute="centerY" secondItem="M8Q-4w-gAE" secondAttribute="bottom" id="jw7-yd-i5S"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="profileImageView" destination="Cmo-gv-MCU" id="qGA-pH-8G6"/>
+                <outlet property="topView" destination="M8Q-4w-gAE" id="JIf-DC-Vj2"/>
+                <outlet property="userNameLabel" destination="2qs-pL-7s3" id="eXA-xY-424"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="136.94196428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AppColor">
+            <color red="0.97299998998641968" green="0.32199999690055847" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appbg">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+    </resources>
+</document>

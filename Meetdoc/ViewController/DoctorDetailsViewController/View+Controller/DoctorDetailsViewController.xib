@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoctorDetailsViewController" customModule="Meetdoc" customModuleProvider="target">
+            <connections>
+                <outlet property="bookButton" destination="jKh-J6-TP7" id="L6W-Xu-B2n"/>
+                <outlet property="bookingTypeStackView" destination="3uN-R9-LV8" id="2zE-ep-rkb"/>
+                <outlet property="shadowView" destination="zAm-Kr-iaQ" id="p1o-dG-3bT"/>
+                <outlet property="tableView" destination="az6-1r-6n2" id="hsU-yf-x28"/>
+                <outlet property="videoButton" destination="Keh-v3-G1D" id="xXo-bt-gW6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pLU-Mg-som">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="652"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="az6-1r-6n2">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="592"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Tm8-FX-lbC"/>
+                                <outlet property="delegate" destination="-1" id="Po5-iD-IbT"/>
+                            </connections>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAm-Kr-iaQ">
+                            <rect key="frame" x="10" y="602" width="355" height="50"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3uN-R9-LV8">
+                                    <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Keh-v3-G1D">
+                                            <rect key="frame" x="0.0" y="0.0" width="172.5" height="50"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="videoButtonAct:" destination="-1" eventType="touchUpInside" id="gUc-Jd-fgi"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKh-J6-TP7">
+                                            <rect key="frame" x="182.5" y="0.0" width="172.5" height="50"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="bookButtonAct:" destination="-1" eventType="touchUpInside" id="3PB-Nh-TLq"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="3uN-R9-LV8" firstAttribute="leading" secondItem="zAm-Kr-iaQ" secondAttribute="leading" id="10K-WO-Vv9"/>
+                                <constraint firstAttribute="trailing" secondItem="3uN-R9-LV8" secondAttribute="trailing" id="AaU-WL-bJp"/>
+                                <constraint firstAttribute="height" constant="50" id="hdH-r1-ihF"/>
+                                <constraint firstItem="3uN-R9-LV8" firstAttribute="top" secondItem="zAm-Kr-iaQ" secondAttribute="top" id="kdJ-QD-Nu9"/>
+                                <constraint firstAttribute="bottom" secondItem="3uN-R9-LV8" secondAttribute="bottom" id="xLT-dM-2ns"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="az6-1r-6n2" secondAttribute="trailing" id="TmN-Yq-sXN"/>
+                        <constraint firstItem="az6-1r-6n2" firstAttribute="leading" secondItem="pLU-Mg-som" secondAttribute="leading" id="gBB-9t-jic"/>
+                        <constraint firstItem="zAm-Kr-iaQ" firstAttribute="leading" secondItem="pLU-Mg-som" secondAttribute="leading" constant="10" id="oFH-Yg-xWv"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="appbg"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pLU-Mg-som" secondAttribute="bottom" constant="15" id="3ee-8z-kTY"/>
+                <constraint firstItem="pLU-Mg-som" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="6a9-bC-kz1"/>
+                <constraint firstItem="pLU-Mg-som" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bRJ-uS-p1E"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pLU-Mg-som" secondAttribute="trailing" id="d6n-pk-N0f"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="98.50074962518741"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="appbg">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

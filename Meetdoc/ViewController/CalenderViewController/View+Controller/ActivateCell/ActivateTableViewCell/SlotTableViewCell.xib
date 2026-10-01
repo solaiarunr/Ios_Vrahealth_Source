@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="SlotTableViewCell" customModule="Meetdoc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HUA-Wp-I1D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tm1-Op-ehR">
+                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qat-K9-JSi">
+                                <rect key="frame" x="0.0" y="25.5" width="320" height="45"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Og-ka-zIe">
+                                        <rect key="frame" x="0.0" y="0.0" width="137.5" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="02Z-wt-9aE"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bBf-H7-T6p">
+                                        <rect key="frame" x="147.5" y="0.0" width="137.5" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="pcg-h2-f1H"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suo-ps-sIe">
+                                        <rect key="frame" x="295" y="10" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="iPB-83-QWP"/>
+                                            <constraint firstAttribute="height" constant="25" id="vWp-IO-L68"/>
+                                        </constraints>
+                                        <state key="normal" image="delete"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1Og-ka-zIe" secondAttribute="bottom" id="7PV-Bq-yUf"/>
+                                    <constraint firstItem="1Og-ka-zIe" firstAttribute="leading" secondItem="Qat-K9-JSi" secondAttribute="leading" id="Mqr-Hu-h1X"/>
+                                    <constraint firstItem="suo-ps-sIe" firstAttribute="top" secondItem="Qat-K9-JSi" secondAttribute="top" constant="10" id="Rjs-lp-P8p"/>
+                                    <constraint firstItem="bBf-H7-T6p" firstAttribute="width" secondItem="1Og-ka-zIe" secondAttribute="width" id="Zw8-me-KbZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="suo-ps-sIe" secondAttribute="trailing" id="kbQ-Oi-QUA"/>
+                                    <constraint firstItem="1Og-ka-zIe" firstAttribute="top" secondItem="Qat-K9-JSi" secondAttribute="top" id="osg-df-0Iq"/>
+                                    <constraint firstAttribute="bottom" secondItem="suo-ps-sIe" secondAttribute="bottom" constant="10" id="qCA-mG-xAK"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ZHt-0w-ts3">
+                                <rect key="frame" x="0.0" y="75.5" width="87.5" height="38.5"/>
+                                <subviews>
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DXh-fD-bQ4">
+                                        <rect key="frame" x="-10" y="0.0" width="10" height="38.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viu-IQ-GIJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="38.5"/>
+                                                <state key="normal" image="radio_UnSel"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwT-3e-ws5">
+                                                <rect key="frame" x="10" y="0.0" width="0.0" height="38.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Male">
+                                                    <color key="titleColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OtJ-lv-9ab">
+                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="38.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8l-UQ-FKA">
+                                                <rect key="frame" x="0.0" y="0.0" width="21.5" height="38.5"/>
+                                                <state key="normal" image="radio_UnSel"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9Y-QP-laj">
+                                                <rect key="frame" x="31.5" y="0.0" width="56" height="38.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Female">
+                                                    <color key="titleColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ZHt-0w-ts3" firstAttribute="top" secondItem="Qat-K9-JSi" secondAttribute="bottom" constant="5" id="IJQ-TW-Gco"/>
+                            <constraint firstAttribute="trailing" secondItem="Qat-K9-JSi" secondAttribute="trailing" id="yob-qR-o1d"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="HUA-Wp-I1D" secondAttribute="trailing" id="5wC-Gg-2Xx"/>
+                    <constraint firstAttribute="bottom" secondItem="HUA-Wp-I1D" secondAttribute="bottom" id="J6Y-mA-ySq"/>
+                    <constraint firstItem="HUA-Wp-I1D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MTp-KZ-PlD"/>
+                    <constraint firstItem="HUA-Wp-I1D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Vhh-3y-f4V"/>
+                    <constraint firstAttribute="bottom" secondItem="HUA-Wp-I1D" secondAttribute="bottom" id="YJJ-Gb-HgK"/>
+                    <constraint firstItem="HUA-Wp-I1D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nP4-1e-JEo"/>
+                    <constraint firstItem="HUA-Wp-I1D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pE4-CX-ZgA"/>
+                    <constraint firstAttribute="trailing" secondItem="HUA-Wp-I1D" secondAttribute="trailing" id="qeQ-cm-pj4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bookingType" destination="ZHt-0w-ts3" id="eTv-Wx-mbF"/>
+                <outlet property="closeButton" destination="suo-ps-sIe" id="a3r-4E-1kQ"/>
+                <outlet property="directOptionButton" destination="viu-IQ-GIJ" id="wfl-vi-UF7"/>
+                <outlet property="directTitleButton" destination="QwT-3e-ws5" id="rRy-ei-RKq"/>
+                <outlet property="fromTimeTextField" destination="1Og-ka-zIe" id="0FO-KE-CUG"/>
+                <outlet property="slotTitleLabel" destination="Tm1-Op-ehR" id="x8z-xI-wGP"/>
+                <outlet property="toTimeTextField" destination="bBf-H7-T6p" id="mb8-3L-bJk"/>
+                <outlet property="videoOptionButton" destination="v8l-UQ-FKA" id="iWy-QV-SC2"/>
+                <outlet property="videoTitleButton" destination="S9Y-QP-laj" id="Usv-kq-PBs"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="145.3125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete" width="120" height="120"/>
+        <image name="radio_UnSel" width="21.333333969116211" height="21.333333969116211"/>
+    </resources>
+</document>

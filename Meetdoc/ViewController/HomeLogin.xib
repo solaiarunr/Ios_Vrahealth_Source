@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeLogin" customModule="Meetdoc" customModuleProvider="target">
+            <connections>
+                <outlet property="Digitalclinic_signin" destination="O1D-Og-laX" id="Hwa-cL-EXP"/>
+                <outlet property="Doctor_signin" destination="kol-O5-X1P" id="a2W-g2-olB"/>
+                <outlet property="User_signin" destination="Iuj-wu-vwf" id="z0e-Xi-88H"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Nfr-2X-v1N">
+                    <rect key="frame" x="32.5" y="178.5" width="255" height="211"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kol-O5-X1P">
+                            <rect key="frame" x="0.0" y="0.0" width="255" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="255" id="4PP-YY-KJ2"/>
+                                <constraint firstAttribute="height" constant="53" id="Igr-da-gQ3"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="DoctorButtonAct:" destination="-1" eventType="touchUpInside" id="G9y-KD-edV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1D-Og-laX">
+                            <rect key="frame" x="0.0" y="79" width="255" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="255" id="jCH-ba-9Y7"/>
+                                <constraint firstAttribute="height" constant="53" id="uyT-kA-4Q9"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="DigitalClinicButtonAct:" destination="-1" eventType="touchUpInside" id="u0P-gc-LMf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iuj-wu-vwf">
+                            <rect key="frame" x="0.0" y="158" width="255" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="53" id="Boh-Pz-EFV"/>
+                                <constraint firstAttribute="width" constant="255" id="g4f-sw-eJx"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="UserButtonAct:" destination="-1" eventType="touchUpInside" id="TKV-Xy-dRb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Nfr-2X-v1N" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="KDg-K2-AeR"/>
+                <constraint firstItem="Nfr-2X-v1N" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nKX-dP-OZ4"/>
+            </constraints>
+            <point key="canvasLocation" x="140.625" y="92.957746478873247"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

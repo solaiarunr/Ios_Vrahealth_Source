@@ -1,0 +1,6 @@
+framework module AttributedString_swift {
+  umbrella header "AttributedString.swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

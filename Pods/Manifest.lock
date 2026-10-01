@@ -1,0 +1,517 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AppAuth (1.6.2):
+    - AppAuth/Core (= 1.6.2)
+    - AppAuth/ExternalUserAgent (= 1.6.2)
+  - AppAuth/Core (1.6.2)
+  - AppAuth/ExternalUserAgent (1.6.2):
+    - AppAuth/Core
+  - AttributedString.swift (1.0.3)
+  - ConnectyCube (1.7.0)
+  - ConnectyCubeCalls (1.2):
+    - ConnectyCube (>= 1.0)
+  - Cosmos (22.1.0)
+  - DropDown (2.3.13)
+  - FacebookCore (0.9.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FacebookLogin (0.9.0):
+    - FacebookCore (~> 0.9.0)
+    - FBSDKCoreKit (~> 5.0)
+    - FBSDKLoginKit (~> 5.0)
+  - FacebookShare (0.9.0):
+    - FacebookCore (~> 0.9.0)
+    - FBSDKCoreKit (~> 5.0)
+    - FBSDKShareKit (~> 5.0)
+  - FBSDKCoreKit (5.15.1):
+    - FBSDKCoreKit/Basics (= 5.15.1)
+    - FBSDKCoreKit/Core (= 5.15.1)
+  - FBSDKCoreKit/Basics (5.15.1)
+  - FBSDKCoreKit/Core (5.15.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.15.1):
+    - FBSDKLoginKit/Login (= 5.15.1)
+  - FBSDKLoginKit/Login (5.15.1):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKShareKit (5.15.1):
+    - FBSDKShareKit/Share (= 5.15.1)
+  - FBSDKShareKit/Share (5.15.1):
+    - FBSDKCoreKit (~> 5.0)
+  - Firebase/Auth (6.30.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 6.8.0)
+  - Firebase/CoreOnly (6.30.0):
+    - FirebaseCore (= 6.10.0)
+  - FirebaseAnalytics (6.6.0):
+    - FirebaseCore (~> 6.7)
+    - FirebaseInstallations (~> 1.3)
+    - GoogleAppMeasurement (= 6.6.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (~> 1.30905.0)
+  - FirebaseAuth (6.8.0):
+    - FirebaseCore (~> 6.10)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseCore (6.10.0):
+    - FirebaseCoreDiagnostics (~> 1.3)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Logger (~> 6.7)
+  - FirebaseCoreDiagnostics (1.5.0):
+    - GoogleDataTransport (~> 7.0)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Logger (~> 6.7)
+    - nanopb (~> 1.30905.0)
+  - FirebaseInstallations (1.7.0):
+    - FirebaseCore (~> 6.10)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/UserDefaults (~> 6.7)
+    - PromisesObjC (~> 1.2)
+  - FirebaseInstanceID (4.8.0):
+    - FirebaseCore (~> 6.10)
+    - FirebaseInstallations (~> 1.6)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/UserDefaults (~> 6.7)
+  - FirebaseMessaging (4.7.1):
+    - FirebaseCore (~> 6.10)
+    - FirebaseInstanceID (~> 4.7)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Reachability (~> 6.7)
+    - GoogleUtilities/UserDefaults (~> 6.7)
+    - Protobuf (>= 3.9.2, ~> 3.9)
+  - FirebaseUI/Auth (9.0.0):
+    - Firebase/Auth
+    - GoogleUtilities/UserDefaults
+  - FirebaseUI/Phone (9.0.0):
+    - FirebaseUI/Auth
+  - Google-Mobile-Ads-SDK (7.67.0):
+    - GoogleAppMeasurement (~> 6.0)
+    - GoogleUserMessagingPlatform (~> 1.1)
+  - GoogleAppMeasurement (6.6.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (~> 1.30905.0)
+  - GoogleDataTransport (7.2.0):
+    - nanopb (~> 1.30905.0)
+  - GoogleMaps (3.9.0):
+    - GoogleMaps/Maps (= 3.9.0)
+  - GoogleMaps/Base (3.9.0)
+  - GoogleMaps/Maps (3.9.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.9.0):
+    - GoogleMaps/Base (= 3.9.0)
+  - GoogleSignIn (6.1.0):
+    - AppAuth (~> 1.4)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleUserMessagingPlatform (1.4.0)
+  - GoogleUtilities/AppDelegateSwizzler (6.7.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.7.2):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (6.7.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.7.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.7.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.7.2)"
+  - GoogleUtilities/Reachability (6.7.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.7.2):
+    - GoogleUtilities/Logger
+  - GoogleWebRTC (1.1.31999)
+  - GTMAppAuth (1.1.0):
+    - AppAuth/Core (~> 1.4)
+    - GTMSessionFetcher (~> 1.4)
+  - GTMSessionFetcher (1.4.0):
+    - GTMSessionFetcher/Full (= 1.4.0)
+  - GTMSessionFetcher/Core (1.4.0)
+  - GTMSessionFetcher/Full (1.4.0):
+    - GTMSessionFetcher/Core (= 1.4.0)
+  - ImageSlideshow/Core (1.8.3)
+  - ImageSlideshow/SDWebImage (1.8.3):
+    - ImageSlideshow/Core
+    - SDWebImage (>= 3.7)
+  - IQKeyboardManagerSwift (6.5.5)
+  - JTMaterialTransition (2.0.3)
+  - KSTokenView (4.0.1)
+  - MXPagerView (0.2.1)
+  - MXParallaxHeader (1.1.0)
+  - MXSegmentedControl (1.1.0)
+  - MXSegmentedPager (4.0.0):
+    - MXPagerView (~> 0.2)
+    - MXParallaxHeader (~> 1.0)
+    - MXSegmentedControl (~> 1.1)
+  - nanopb (1.30905.0):
+    - nanopb/decode (= 1.30905.0)
+    - nanopb/encode (= 1.30905.0)
+  - nanopb/decode (1.30905.0)
+  - nanopb/encode (1.30905.0)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - PhoneNumberKit (3.7.4):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.7.4)
+    - PhoneNumberKit/UIKit (= 3.7.4)
+  - PhoneNumberKit/PhoneNumberKitCore (3.7.4)
+  - PhoneNumberKit/UIKit (3.7.4):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - PromisesObjC (1.2.11)
+  - Protobuf (3.13.0)
+  - razorpay-pod (1.3.8)
+  - Reusable (4.1.2):
+    - Reusable/Storyboard (= 4.1.2)
+    - Reusable/View (= 4.1.2)
+  - Reusable/Storyboard (4.1.2)
+  - Reusable/View (4.1.2)
+  - SDWebImage (5.8.1):
+    - SDWebImage/Core (= 5.8.1)
+  - SDWebImage/Core (5.8.1)
+  - Socket.IO-Client-Swift (13.1.3):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.6)
+  - Stripe (22.8.4):
+    - Stripe/Stripe3DS2 (= 22.8.4)
+    - StripeApplePay (= 22.8.4)
+    - StripeCore (= 22.8.4)
+    - StripeUICore (= 22.8.4)
+  - Stripe/Stripe3DS2 (22.8.4):
+    - StripeApplePay (= 22.8.4)
+    - StripeCore (= 22.8.4)
+    - StripeUICore (= 22.8.4)
+  - StripeApplePay (22.8.4):
+    - StripeCore (= 22.8.4)
+  - StripeCore (22.8.4)
+  - StripeUICore (22.8.4):
+    - StripeCore (= 22.8.4)
+  - SVProgressHUD (2.2.5)
+  - SwiftDate (6.3.1)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
+  - SwiftyJSON (5.0.0)
+  - Toast-Swift (3.0.1)
+  - ValidationComponents (0.3.0):
+    - ValidationToolkit (~> 0.4.1)
+  - ValidationToolkit (0.4.1)
+  - YapDatabase (4.0.1):
+    - YapDatabase/Standard (= 4.0.1)
+  - YapDatabase/Standard (4.0.1):
+    - YapDatabase/Standard/Core (= 4.0.1)
+    - YapDatabase/Standard/Extensions (= 4.0.1)
+  - YapDatabase/Standard-ObjC/Core (4.0.1)
+  - YapDatabase/Standard-ObjC/Extensions/ActionManager (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+    - YapDatabase/Standard-ObjC/Extensions/AutoView
+  - YapDatabase/Standard-ObjC/Extensions/AutoView (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+    - YapDatabase/Standard-ObjC/Extensions/View
+  - YapDatabase/Standard-ObjC/Extensions/CloudCore (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+  - YapDatabase/Standard-ObjC/Extensions/CloudKit (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+  - YapDatabase/Standard-ObjC/Extensions/CrossProcessNotification (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+  - YapDatabase/Standard-ObjC/Extensions/FilteredView (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+    - YapDatabase/Standard-ObjC/Extensions/View
+  - YapDatabase/Standard-ObjC/Extensions/FullTextSearch (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+  - YapDatabase/Standard-ObjC/Extensions/Hooks (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+  - YapDatabase/Standard-ObjC/Extensions/ManualView (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+    - YapDatabase/Standard-ObjC/Extensions/View
+  - YapDatabase/Standard-ObjC/Extensions/Relationships (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+  - YapDatabase/Standard-ObjC/Extensions/RTreeIndex (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+  - YapDatabase/Standard-ObjC/Extensions/SearchResultsView (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+    - YapDatabase/Standard-ObjC/Extensions/AutoView
+    - YapDatabase/Standard-ObjC/Extensions/FullTextSearch
+  - YapDatabase/Standard-ObjC/Extensions/SecondaryIndex (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+  - YapDatabase/Standard-ObjC/Extensions/View (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+  - YapDatabase/Standard/Core (4.0.1):
+    - YapDatabase/Standard-ObjC/Core
+  - YapDatabase/Standard/Extensions (4.0.1):
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/ActionManager (= 4.0.1)
+    - YapDatabase/Standard/Extensions/AutoView (= 4.0.1)
+    - YapDatabase/Standard/Extensions/CloudCore (= 4.0.1)
+    - YapDatabase/Standard/Extensions/CloudKit (= 4.0.1)
+    - YapDatabase/Standard/Extensions/CrossProcessNotification (= 4.0.1)
+    - YapDatabase/Standard/Extensions/FilteredView (= 4.0.1)
+    - YapDatabase/Standard/Extensions/FullTextSearch (= 4.0.1)
+    - YapDatabase/Standard/Extensions/Hooks (= 4.0.1)
+    - YapDatabase/Standard/Extensions/ManualView (= 4.0.1)
+    - YapDatabase/Standard/Extensions/Relationships (= 4.0.1)
+    - YapDatabase/Standard/Extensions/RTreeIndex (= 4.0.1)
+    - YapDatabase/Standard/Extensions/SearchResultsView (= 4.0.1)
+    - YapDatabase/Standard/Extensions/SecondaryIndex (= 4.0.1)
+    - YapDatabase/Standard/Extensions/View (= 4.0.1)
+  - YapDatabase/Standard/Extensions/ActionManager (4.0.1):
+    - YapDatabase/Standard-ObjC/Extensions/ActionManager
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/AutoView
+  - YapDatabase/Standard/Extensions/AutoView (4.0.1):
+    - YapDatabase/Standard-ObjC/Extensions/AutoView
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/View
+  - YapDatabase/Standard/Extensions/CloudCore (4.0.1):
+    - YapDatabase/Standard-ObjC/Extensions/CloudCore
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/CloudKit (4.0.1):
+    - YapDatabase/Standard-ObjC/Extensions/CloudKit
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/CrossProcessNotification (4.0.1):
+    - YapDatabase/Standard-ObjC/Extensions/CrossProcessNotification
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/FilteredView (4.0.1):
+    - YapDatabase/Standard-ObjC/Extensions/FilteredView
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/View
+  - YapDatabase/Standard/Extensions/FullTextSearch (4.0.1):
+    - YapDatabase/Standard-ObjC/Extensions/FullTextSearch
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/Hooks (4.0.1):
+    - YapDatabase/Standard-ObjC/Extensions/Hooks
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/ManualView (4.0.1):
+    - YapDatabase/Standard-ObjC/Extensions/ManualView
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/View
+  - YapDatabase/Standard/Extensions/Relationships (4.0.1):
+    - YapDatabase/Standard-ObjC/Extensions/Relationships
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/RTreeIndex (4.0.1):
+    - YapDatabase/Standard-ObjC/Extensions/RTreeIndex
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/SearchResultsView (4.0.1):
+    - YapDatabase/Standard-ObjC/Extensions/SearchResultsView
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/AutoView
+    - YapDatabase/Standard/Extensions/FullTextSearch
+  - YapDatabase/Standard/Extensions/SecondaryIndex (4.0.1):
+    - YapDatabase/Standard-ObjC/Extensions/SecondaryIndex
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/View (4.0.1):
+    - YapDatabase/Standard-ObjC/Extensions/View
+    - YapDatabase/Standard/Core
+  - ZegoExpressEngine (3.12.4)
+  - ZegoPluginAdapter (2.3.0)
+  - ZegoUIKit (2.8.0):
+    - ZegoExpressEngine (~> 3.12.3)
+    - ZegoPluginAdapter (>= 2.3.0)
+  - ZegoUIKitPrebuiltCall (2.6.1):
+    - ZegoUIKit (>= 2.7.0)
+  - ZegoUIKitSignalingPlugin (2.3.0):
+    - ZegoPluginAdapter
+    - ZIM (= 2.9.0)
+    - ZPNs (= 2.4.0)
+  - ZIM (2.9.0)
+  - ZPNs (2.4.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9.1)
+  - AttributedString.swift
+  - ConnectyCube
+  - ConnectyCubeCalls
+  - Cosmos
+  - DropDown
+  - FacebookCore
+  - FacebookLogin
+  - FacebookShare
+  - FBSDKLoginKit
+  - FirebaseAnalytics
+  - FirebaseCore
+  - FirebaseMessaging
+  - FirebaseUI/Auth
+  - FirebaseUI/Phone
+  - Google-Mobile-Ads-SDK
+  - GoogleMaps
+  - GooglePlaces
+  - GoogleSignIn
+  - GoogleWebRTC
+  - ImageSlideshow/SDWebImage
+  - IQKeyboardManagerSwift
+  - JTMaterialTransition
+  - KSTokenView
+  - MXSegmentedPager
+  - NVActivityIndicatorView
+  - PhoneNumberKit
+  - razorpay-pod
+  - Reusable
+  - SDWebImage
+  - Socket.IO-Client-Swift (~> 13.1.0)
+  - Stripe
+  - SVProgressHUD
+  - SwiftDate
+  - SwiftMessages
+  - SwiftyJSON
+  - Toast-Swift (~> 3.0.1)
+  - ValidationComponents
+  - YapDatabase
+  - ZegoUIKitPrebuiltCall
+  - ZegoUIKitSignalingPlugin
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AppAuth
+    - AttributedString.swift
+    - ConnectyCube
+    - ConnectyCubeCalls
+    - Cosmos
+    - DropDown
+    - FacebookCore
+    - FacebookLogin
+    - FacebookShare
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseInstallations
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - FirebaseUI
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleMaps
+    - GooglePlaces
+    - GoogleSignIn
+    - GoogleUserMessagingPlatform
+    - GoogleUtilities
+    - GoogleWebRTC
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - ImageSlideshow
+    - IQKeyboardManagerSwift
+    - JTMaterialTransition
+    - KSTokenView
+    - MXPagerView
+    - MXParallaxHeader
+    - MXSegmentedControl
+    - MXSegmentedPager
+    - nanopb
+    - NVActivityIndicatorView
+    - PhoneNumberKit
+    - PromisesObjC
+    - Protobuf
+    - razorpay-pod
+    - Reusable
+    - SDWebImage
+    - Socket.IO-Client-Swift
+    - Starscream
+    - Stripe
+    - StripeApplePay
+    - StripeCore
+    - StripeUICore
+    - SVProgressHUD
+    - SwiftDate
+    - SwiftMessages
+    - SwiftyJSON
+    - Toast-Swift
+    - ValidationComponents
+    - ValidationToolkit
+    - YapDatabase
+    - ZegoExpressEngine
+    - ZegoPluginAdapter
+    - ZegoUIKit
+    - ZegoUIKitPrebuiltCall
+    - ZegoUIKitSignalingPlugin
+    - ZIM
+    - ZPNs
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AppAuth: 3bb1d1cd9340bd09f5ed189fb00b1cc28e1e8570
+  AttributedString.swift: 4367a62dbd5697c1ff7516cd381220401205670e
+  ConnectyCube: ebca97c0b839cb8283f4abd562f7c1d01356ecae
+  ConnectyCubeCalls: 9627288fb5148387f8d8c92388d98847523d98ab
+  Cosmos: 2795b36ad4bbea1af3050d6d65576ed63875f86a
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
+  FacebookLogin: 6cee9fd6e1fe976fe8f7eec199e27b28b14f5d63
+  FacebookShare: 85968ad1b1606c4944fb154924e425fd29184ea5
+  FBSDKCoreKit: 1d5acf7c9d7a2f92bb1a242dc60cae5b7adb91df
+  FBSDKLoginKit: f1ea8026a58b52d30c9f2e6a58ca7d813619fb83
+  FBSDKShareKit: 259737eab3cc807087374553abdf588b3096ba55
+  Firebase: 210f41ca352067d83b1ba4fd2e7fb49a0c017397
+  FirebaseAnalytics: 96634d356482d4f3af8fe459a0ebf19a99c71b75
+  FirebaseAuth: 300433de340c1b058dbb8aec224a3f1bcfda5184
+  FirebaseCore: 9a41e2de78fef10f63cee30ab10e2945266bc1fc
+  FirebaseCoreDiagnostics: 7535fe695737f8c5b350584292a70b7f8ff0357b
+  FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
+  FirebaseInstanceID: bd3ffc24367f901a43c063b36c640b345a4a5dd1
+  FirebaseMessaging: 5eca4ef173de76253352511aafef774caa1cba2a
+  FirebaseUI: f0677a1cc235f6da602cbd5c9b5fbbd24544a6b3
+  Google-Mobile-Ads-SDK: 8b58584890539de4527c47ef01e4da941a10bc8a
+  GoogleAppMeasurement: 67458367830514fb20fd9e233496f1eef9d90185
+  GoogleDataTransport: 672fb0ce96fe7f7f31d43672fca62ad2c9c86f7b
+  GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
+  GooglePlaces: 1634d019549b969d40fe0ccb0b9513055adebe01
+  GoogleSignIn: c90b5bec45e780f54c6a8e1e3c182a86e3dda69d
+  GoogleUserMessagingPlatform: b168e8c46cd8f92aa3e34b584c4ca78a411ce367
+  GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
+  GoogleWebRTC: b39a78c4f5cc6b0323415b9233db03a2faa7b0f0
+  GTMAppAuth: 197a8dabfea5d665224aa00d17f164fc2248dab9
+  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  ImageSlideshow: 4694d7d699a1549582e7cc631fb392d8f91630f3
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  JTMaterialTransition: 7ff22aae6cd969734d775708f08e3656c52cb7bf
+  KSTokenView: 73bd70340b9f64b8324a55e5be5e9bd94a4d139e
+  MXPagerView: ede184b5191b2ed689ccf05a750a9978cce42414
+  MXParallaxHeader: de3c867e10ba46e8f6e20c8ee1f2a910372b3b94
+  MXSegmentedControl: f39e46199a52cbc03b1c845e150215119f2542f5
+  MXSegmentedPager: 527ee76513c96e6607eebe473fe49b7ab4971616
+  nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  PhoneNumberKit: e3c4dc9f65bc2036639898095c2ab1ef89348f64
+  PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
+  Protobuf: 3dac39b34a08151c6d949560efe3f86134a3f748
+  razorpay-pod: c7064a37dd15fbc0e5f26776314c9a8842df1269
+  Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
+  SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
+  Socket.IO-Client-Swift: d30d6fd08a38ad2a182b090936a043bf512ab2de
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+  Stripe: 59f6659e8ea413def19c97c57e23f5ec6ea48cf8
+  StripeApplePay: 6e9aebd3d248464836e9fbdaef6e5fb1817d56a6
+  StripeCore: 193f27552fb98108ebfe0df11651fe5f38948305
+  StripeUICore: 6a5bbea0164d63bd91000f001903e7901859e1a4
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
+  ValidationComponents: fad1f9e9d7fbf3e10c893c880ef9d27627e90382
+  ValidationToolkit: ce8e9c1a5d49eddc3266a009d46df5ea22042dbc
+  YapDatabase: 350ab72b61f9dcc32504594da1a52a93f5ef1476
+  ZegoExpressEngine: 4134bbfaecf5ce4ab5c47338ff817942d646750f
+  ZegoPluginAdapter: d9edcf94841516e27fafb6da4dab691e2e281933
+  ZegoUIKit: bb12dea2239cb680fbe1fc115e7ab550ac186085
+  ZegoUIKitPrebuiltCall: 73b28b0f8a043eba171c3a634795d68e3f66efaf
+  ZegoUIKitSignalingPlugin: e7274d6950799c9547039b229b11e7f23776482f
+  ZIM: c3388322ebe0028b85f976979c8cafd3d3032399
+  ZPNs: 2ef89a571260ca9ffe4fc3394413ff19b8e372be
+
+PODFILE CHECKSUM: b3f181550a0519f77c3d3070b1f22e19dbd96f62
+
+COCOAPODS: 1.16.2

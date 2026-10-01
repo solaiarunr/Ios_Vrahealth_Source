@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrescriptionUploadViewController" customModule="Meetdoc" customModuleProvider="target">
+            <connections>
+                <outlet property="prescriptionUploadButton" destination="Q7T-Tz-9U8" id="zbK-Ep-Gv3"/>
+                <outlet property="prescriptionUploadText" destination="2Qg-xh-fbi" id="dnz-1f-FIR"/>
+                <outlet property="prescriptionUploadView" destination="Bru-gu-0f1" id="KRf-oM-4JG"/>
+                <outlet property="saveBgView" destination="85e-YB-SRw" id="hbC-Ti-CTe"/>
+                <outlet property="saveBtn" destination="BVp-A5-SQ0" id="HQu-aC-9R4"/>
+                <outlet property="tableView" destination="Fkl-FY-k36" id="iLG-Vf-HZm"/>
+                <outlet property="tableViewHeightConst" destination="F06-ET-cAA" id="yjQ-9m-bCq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="p01-gf-BmX">
+                    <rect key="frame" x="10" y="59" width="394" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bru-gu-0f1">
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="45"/>
+                            <subviews>
+                                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Certification Upload" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Qg-xh-fbi">
+                                    <rect key="frame" x="0.0" y="0.0" width="394" height="45"/>
+                                    <color key="tintColor" name="AppColor"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" notEnabled="YES"/>
+                                    </accessibility>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="E5h-Q3-VMX"/>
+                                    </constraints>
+                                    <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="19"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7T-Tz-9U8">
+                                    <rect key="frame" x="337" y="0.0" width="57" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="57" id="4Tt-q4-eqW"/>
+                                        <constraint firstAttribute="height" constant="45" id="cbr-yM-goG"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="Upload"/>
+                                    <connections>
+                                        <action selector="prescriptionUploadButtonAct:" destination="-1" eventType="touchUpInside" id="zVZ-ET-LLE"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="ClearColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="2Qg-xh-fbi" secondAttribute="trailing" id="2hd-0i-amt"/>
+                                <constraint firstAttribute="height" constant="45" id="DT0-j3-5R4"/>
+                                <constraint firstItem="Q7T-Tz-9U8" firstAttribute="centerY" secondItem="2Qg-xh-fbi" secondAttribute="centerY" id="Mlm-ID-Yjy"/>
+                                <constraint firstAttribute="bottom" secondItem="2Qg-xh-fbi" secondAttribute="bottom" id="Uaz-zk-vSd"/>
+                                <constraint firstAttribute="trailing" secondItem="Q7T-Tz-9U8" secondAttribute="trailing" id="ewa-uQ-ys5"/>
+                                <constraint firstItem="2Qg-xh-fbi" firstAttribute="leading" secondItem="Bru-gu-0f1" secondAttribute="leading" id="gJZ-8L-3Zu"/>
+                                <constraint firstItem="2Qg-xh-fbi" firstAttribute="top" secondItem="Bru-gu-0f1" secondAttribute="top" id="o79-UM-xae"/>
+                            </constraints>
+                        </view>
+                        <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fkl-FY-k36">
+                            <rect key="frame" x="0.0" y="55" width="394" height="45"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="F06-ET-cAA"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="l1E-8J-V7R"/>
+                                <outlet property="delegate" destination="-1" id="5b8-MO-i6b"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85e-YB-SRw">
+                    <rect key="frame" x="0.0" y="807" width="414" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVp-A5-SQ0">
+                            <rect key="frame" x="15" y="5" width="384" height="45"/>
+                            <color key="backgroundColor" name="AppColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="cLW-mn-QX7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                            <state key="normal" title="Save">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="saveBtnTapped:" destination="-1" eventType="touchUpInside" id="BRX-n5-tJk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="BVp-A5-SQ0" firstAttribute="top" secondItem="85e-YB-SRw" secondAttribute="top" constant="5" id="99I-Yz-rtY"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="IWJ-04-hqc"/>
+                        <constraint firstItem="BVp-A5-SQ0" firstAttribute="leading" secondItem="85e-YB-SRw" secondAttribute="leading" constant="15" id="PE7-X2-RuL"/>
+                        <constraint firstAttribute="bottom" secondItem="BVp-A5-SQ0" secondAttribute="bottom" constant="5" id="kwh-Jj-7fD"/>
+                        <constraint firstAttribute="trailing" secondItem="BVp-A5-SQ0" secondAttribute="trailing" constant="15" id="yeG-qd-mlj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="p01-gf-BmX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="AAP-b9-Kbu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="85e-YB-SRw" secondAttribute="trailing" id="Kao-rg-Piy"/>
+                <constraint firstItem="85e-YB-SRw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cfS-Kl-Teb"/>
+                <constraint firstItem="85e-YB-SRw" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="fcd-AX-Sxz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="p01-gf-BmX" secondAttribute="trailing" constant="10" id="nof-3t-Nz0"/>
+                <constraint firstItem="p01-gf-BmX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="o1V-3N-ed4"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Upload" width="33.333332061767578" height="26.333333969116211"/>
+        <namedColor name="AppColor">
+            <color red="0.97299998998641968" green="0.32199999690055847" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ClearColor">
+            <color red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

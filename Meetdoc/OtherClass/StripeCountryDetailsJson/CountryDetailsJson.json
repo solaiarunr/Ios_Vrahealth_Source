@@ -1,0 +1,252 @@
+
+{
+    "country_details": [{
+            "country_code": "AU",
+            "acc_no": "000123456 (5–9 characters)",
+            "routing_no": "110000 (BSB Number - 6 characters)",
+            "mobile_no": "+61298765432",
+            "mobile_format": "+61 2 9876 5432",
+            "mobile_code": "+61"
+        },
+        {
+            "country_code": "AT",
+            "acc_no": "AT611904300234573201",
+            "routing_no": "",
+            "mobile_no": "+433169876543",
+            "mobile_format": "+43 316 9876543",
+            "mobile_code": "+43"
+        },
+        {
+            "country_code": "BE",
+            "acc_no": "BE12345678912345",
+            "routing_no": "",
+            "mobile_no": "+32819876543",
+            "mobile_format": "+32 81 9876543",
+            "mobile_code": "+32"
+        },
+        {
+            "country_code": "CA",
+            "acc_no": "000123456789",
+            "routing_no": "11000-000 (combine the transit and institution numbers)",
+            "mobile_no": "+15143138652",
+            "mobile_format": "+1 (514) 313-8652",
+            "mobile_code": "+1"
+        },
+        {
+            "country_code": "CZ",
+            "acc_no": "CZ6508000000192000145399 (24 characters)",
+            "routing_no": "",
+            "mobile_no": "+420389876543",
+            "mobile_format": "+420 38 9876543",
+            "mobile_code": "+420"
+        },
+        {
+            "country_code": "DK",
+            "acc_no": "DK5000400440116243",
+            "routing_no": "",
+            "mobile_no": "+4578725769",
+            "mobile_format": "+45 78 725769",
+            "mobile_code": "+45"
+        },
+        {
+            "country_code": "EE",
+            "acc_no": "EE382200221020145685 (20 characters)",
+            "routing_no": "",
+            "mobile_no": "+3723219876",
+            "mobile_format": "+372 321 9876",
+            "mobile_code": "+372"
+        },
+        {
+            "country_code": "FI",
+            "acc_no": "FI2112345600000785",
+            "routing_no": "",
+            "mobile_no": "+358149876543",
+            "mobile_format": "+358 14 9876543",
+            "mobile_code": "+358"
+        },
+        {
+            "country_code": "FR",
+            "acc_no": "FR1420041010050500013M02606 (27 characters)",
+            "routing_no": "",
+            "mobile_no": "+33198765432",
+            "mobile_format": "+33 1 98 76 54 32",
+            "mobile_code": "+33"
+        },
+        {
+            "country_code": "DE",
+            "acc_no": "DE89370400440532013000 (22 characters)",
+            "routing_no": "",
+            "mobile_no": "+4930987654",
+            "mobile_format": "+49 30 987654",
+            "mobile_code": "+49"
+        },
+        {
+            "country_code": "GR",
+            "acc_no": "GR1601101250000000012300695 (27 characters)",
+            "routing_no": "",
+            "mobile_no": "+302103353146",
+            "mobile_format": "(+30) 210 33 53 146",
+            "mobile_code": "+30"
+        },
+        {
+            "country_code": "HK",
+            "acc_no": "123456-789 (6-9 characters)",
+            "routing_no": "110-000 (combine the bank code and branch code)",
+            "mobile_no": "+85229212222",
+            "mobile_format": "+852 2921 2222",
+            "mobile_code": "+852"
+        },
+        {
+            "country_code": "IE",
+            "acc_no": "IE29AIBK93115212345678 (22 characters)",
+            "routing_no": "",
+            "mobile_no": "+353217059783",
+            "mobile_format": "+353 21 705 9783",
+            "mobile_code": "+353"
+        },
+        {
+            "country_code": "IT",
+            "acc_no": "IT60X0542811101000000123456 (27 characters)",
+            "routing_no": "",
+            "mobile_no": "+39987654321",
+            "mobile_format": "+39 987654321",
+            "mobile_code": "+39"
+        },
+        {
+            "country_code": "LT",
+            "acc_no": "LT121000011101001000 (20 characters)",
+            "routing_no": "",
+            "mobile_no": "+37052361587",
+            "mobile_format": "+370 5 236 15 87",
+            "mobile_code": "+370"
+        },
+        {
+            "country_code": "LU",
+            "acc_no": "LU280019400644750000 (20 characters)",
+            "routing_no": "",
+            "mobile_no": "+352601987654",
+            "mobile_format": "+352 601 987 654",
+            "mobile_code": "+352"
+        },
+        {
+            "country_code": "LV",
+            "acc_no": "LV80BANK0000435195001 (21 characters)",
+            "routing_no": "",
+            "mobile_no": "+37163987654",
+            "mobile_format": "++371 63 987 654",
+            "mobile_code": "+371"
+        },
+        {
+            "country_code": "MY",
+            "acc_no": "000123456000 (5-17 digits, format varies by bank)",
+            "routing_no": "TESTMYKL",
+            "mobile_no": "+60398765432",
+            "mobile_format": "+60 3 98765432",
+            "mobile_code": "+60"
+        },
+        {
+            "country_code": "NL",
+            "acc_no": "NL39RABO0300065264 (18 characters)",
+            "routing_no": "",
+            "mobile_no": "+31739876543",
+            "mobile_format": "+31 73 987 6543",
+            "mobile_code": "+31"
+        },
+        {
+            "country_code": "NZ",
+            "acc_no": "AABBBB3456789YZZ (15-16 digits, AABBBB is the bank AA and branch numbers BBBB. 3456789 is the account number and finally, 0ZZ is the suffix with the 0 digit being optional if the suffix is only two digits as '23 or 023')",
+            "routing_no": "",
+            "mobile_no": "+6433456789",
+            "mobile_format": "+64 3 345 6789",
+            "mobile_code": "+64"
+        },
+        {
+            "country_code": "NO",
+            "acc_no": "NO9386011117947 (15 characters)",
+            "routing_no": "",
+            "mobile_no": "+4763987654",
+            "mobile_format": "+47 63 987654",
+            "mobile_code": "+47"
+        },
+        {
+            "country_code": "PL",
+            "acc_no": "PL61109010140000071219812874 (28 characters)",
+            "routing_no": "",
+            "mobile_no": "+48123987654",
+            "mobile_format": "+48 123 987 654",
+            "mobile_code": "+48"
+        },
+        {
+            "country_code": "PT",
+            "acc_no": "PT50123443211234567890172 (25 characters)",
+            "routing_no": "",
+            "mobile_no": "+351234987643",
+            "mobile_format": "+351 234 987 643",
+            "mobile_code": "+351"
+        },
+        {
+            "country_code": "SG",
+            "acc_no": "123456789012 (6-12 characters)",
+            "routing_no": "1100-000 (combine the bank code and branch code with a hyphen to create a full routing number)",
+            "mobile_no": "+6598765432",
+            "mobile_format": "+65 9876 5432",
+            "mobile_code": "+65"
+        },
+        {
+            "country_code": "SK",
+            "acc_no": "SK3112000000198742637541 (24 characters)",
+            "routing_no": "",
+            "mobile_no": "+421489876543",
+            "mobile_format": "+421 48 9876543",
+            "mobile_code": "+421"
+        },
+        {
+            "country_code": "SI",
+            "acc_no": "SI56263300012039086 (19 characters)",
+            "routing_no": "",
+            "mobile_no": "+38649876543",
+            "mobile_format": "+386 4 9876543",
+            "mobile_code": "+386"
+        },
+        {
+            "country_code": "ES",
+            "acc_no": "ES9121000418450200051332 (24 characters)",
+            "routing_no": "",
+            "mobile_no": "+34945987654",
+            "mobile_format": "+34 945 98 76 54",
+            "mobile_code": "+34"
+        },
+        {
+            "country_code": "SE",
+            "acc_no": "SE3550000000054910000003 (24 characters)",
+            "routing_no": "",
+            "mobile_no": "+46941987654",
+            "mobile_format": "+46 941 987654",
+            "mobile_code": "+46"
+        },
+        {
+            "country_code": "CH",
+            "acc_no": "CH9300762011623852957 (21 characters)",
+            "routing_no": "",
+            "mobile_no": "+41229876543",
+            "mobile_format": "+41 22 9876543",
+            "mobile_code": "+41"
+        },
+        {
+            "country_code": "GB",
+            "acc_no": "00012345",
+            "routing_no": "108800",
+            "mobile_no": "+447747665929",
+            "mobile_format": "+44 7747 665929",
+            "mobile_code": "+44"
+        },
+        {
+            "country_code": "US",
+            "acc_no": "000123456789",
+            "routing_no": "110000000",
+            "mobile_no": "+19292240694",
+            "mobile_format": "+1(929)2240694",
+            "mobile_code": "+1"
+        }
+    ]
+}
